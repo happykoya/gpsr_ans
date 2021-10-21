@@ -1,0 +1,6 @@
+<launch>
+    <arg name='argParam' default="Question.xml" />
+    <node pkg="gpsr_answer" name="gpsr_conversation_srvserver" type="gpsr_conversation_srvserver.py" />
+    <node pkg="voice_common_pkg" name="stt" type="stt_server.py" />
+    <node pkg="voice_common_pkg" name="tts" type="tts_srvserver.py"/>
+</launch>
